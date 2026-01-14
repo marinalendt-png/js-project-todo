@@ -58,4 +58,5 @@ const Input = styled.input`
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-family: inherit;
 `;

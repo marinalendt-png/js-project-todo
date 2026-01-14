@@ -9,15 +9,20 @@ export const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 
-html, body, #root {
+html, body {
   width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
 }
 
 body {
   background-color: ${colors.background};
   color: ${colors.textMuted}; 
-  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  font-family: 'Courier New', Courier, monospace; 
   min-height: 100vh;
 }
 
