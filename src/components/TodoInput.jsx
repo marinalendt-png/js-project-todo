@@ -29,7 +29,7 @@ const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
   background: ${colors.header};
-  padding: 20px;
+ 
 `;
 
 const Header = styled.h1`
