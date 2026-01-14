@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../styles/colors";
 
 export const TodoInput = () => {
   return (
     <Container>
       <HeaderContainer>
-        <Header>What ToDo ToDay</Header>
-        <Button>+</Button>
+        <Header>ToDo</Header>
+
       </HeaderContainer>
       <InputWrapper>
         <Input placeholder="Add a ToDo" type="text" />
+        <Button>+</Button>
       </InputWrapper>
     </Container>
   );
@@ -24,15 +26,15 @@ const Container = styled.section`
 
 const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: #333;
-  color: #fff;
+  background: ${colors.header};
   padding: 20px;
 `;
 
 const Header = styled.h1`
   font-size: 30px;
+  color: ${colors.textLight}
 `;
 
 const Button = styled.button`
@@ -40,17 +42,18 @@ const Button = styled.button`
   height: 50px;
   font-size: 40px;
   background: none;
-  border: none;
   color: #fff;
 `;
 
 const InputWrapper = styled.section`
+  display: flex;
+  justify-content: center;
   padding: 20px;
   background: #f7efe6;
 `;
 
 const Input = styled.input`
-  width: 100%;
+  width: 85%;
   padding: 10px 15px;
   font-size: 16px;
   border: 1px solid #ccc;
