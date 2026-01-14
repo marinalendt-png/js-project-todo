@@ -1,13 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { colors } from "../styles/colors";
+import { todoStore } from "../stores/todoStore";
 
 export const TodoInput = () => {
+  const { todos, addTodo } = useTodoStore()
+
+  const handleAddTodo = () => {
+    addTodo("My new todo");
+  };
+
   return (
     <Container>
       <HeaderContainer>
         <Header>ToDo</Header>
-
       </HeaderContainer>
       <InputWrapper>
         <Input placeholder="Add a ToDo" type="text" />
