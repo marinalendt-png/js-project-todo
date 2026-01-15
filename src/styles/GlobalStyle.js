@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "./colors";
+import { colors, palette } from "./colors";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -11,8 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 
 html, body {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 #root {
@@ -21,9 +19,10 @@ html, body {
 
 body {
   background-color: ${colors.background};
-  color: ${colors.textMuted}; 
+  color: ${colors.textPrimary}; 
   font-family: 'Courier New', Courier, monospace; 
   min-height: 100vh;
+  line-height: 1.5;
 }
 
 button {
