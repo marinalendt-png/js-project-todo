@@ -20,12 +20,12 @@ html, body {
 body {
   background-color: ${colors.background};
   color: ${colors.textPrimary}; 
-  font-family: 'Courier New', Courier, monospace; 
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   min-height: 100vh;
   line-height: 1.5;
 }
 
-button {
+button, input, textarea, select {
   font-family: inherit;
   cursor: pointer;
   }
