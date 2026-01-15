@@ -76,7 +76,7 @@ const HeaderContainer = styled.header`
 
 const Header = styled.h1`
   font-size: 48px;
-  color: ${colors.textHeader};
+  color: ${colors.textPrimary};
 `;
 
 const Main = styled.main`
@@ -98,7 +98,7 @@ const CountRow = styled.div`
 const Count = styled.div`
   background: #f0f0f0;
   padding: 8px 16px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 14px;
   color: ${colors.textPrimary};
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -107,7 +107,7 @@ const Count = styled.div`
 const Button = styled.button`
   width: 70px;
   height: 40px;
-  font-size: 20px;
+  font-size: 16px;
   background: none;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -123,7 +123,7 @@ const InputWrapper = styled.section`
   justify-content: center;
   padding: 20px;
   background: #f7efe6;
-  gap: 20px;
+  gap: 16px;
   
 `;
 

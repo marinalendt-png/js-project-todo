@@ -1,7 +1,7 @@
 export const colors = {
   background: "#F6EDE3",
   header: "#FFA97A",
-  textHeader: "#F2E6DC",
+  textHeader: "#FFFFFF",
   textPrimary: "#5E4658",
 }
 
