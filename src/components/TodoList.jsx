@@ -22,17 +22,15 @@ const ListContainer = styled.section`
   width: 100%;
   max-width: 800px;
   margin: 20px auto;
-  background: #ffffff;
+  background: ${colors.secondary};
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   overflow: hidden;
-  margin-top: 20px;
 `;
 
 const Empty = styled.p`
   text-align: center;
-  color: ${colors.textPrimary};
-  padding: 24px; 
-  font-size: 20px;
+  color: ${colors.primary};
+  font-size: 18px;
 `;
 

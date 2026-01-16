@@ -1,5 +1,7 @@
 import { create } from "zustand";
-import { palette } from "../styles/colors";
+import { colors } from "../styles/colors";
+
+const twoColors = [colors.primary, colors.secondary];
 
 export const useTodoStore = create((set, get) => ({
   todos: [],
@@ -8,7 +10,7 @@ export const useTodoStore = create((set, get) => ({
   addTodo: (text) => {
 
     const state = get(); //hämta nuvarande state
-    const color = palette[state.colorIndex]; //välj färg enligt palette (index)
+    const color = twoColors[state.colorIndex]; //välj färg enligt twocolors (index)
 
     const newTodo = {
       id: Date.now(),
@@ -20,7 +22,7 @@ export const useTodoStore = create((set, get) => ({
     //uppdaterar Todos och färgIndex
     set({
       todos: [...state.todos, newTodo],
-      colorIndex: (state.colorIndex + 1) % palette.length,
+      colorIndex: (state.colorIndex + 1) % twoColors.length,
     });
   },
 

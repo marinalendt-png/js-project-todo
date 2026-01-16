@@ -67,7 +67,7 @@ const Container = styled.section`
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
-  background: ${colors.header};
+  background: ${colors.primary};
   width: 100%;
   align-items: center;
   margin-left: -24px;
@@ -76,7 +76,7 @@ const HeaderContainer = styled.header`
 
 const Header = styled.h1`
   font-size: 48px;
-  color: ${colors.textPrimary};
+  color: ${colors.secondary};
 `;
 
 const Main = styled.main`
@@ -96,11 +96,11 @@ const CountRow = styled.div`
 `;
 
 const Count = styled.div`
-  background: #f0f0f0;
+  background: ${colors.primary};
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 14px;
-  color: ${colors.textPrimary};
+  color: ${colors.secondary};
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 `;
 
@@ -111,7 +111,7 @@ const Button = styled.button`
   background: none;
   border: 1px solid #ccc;
   border-radius: 8px;
-  color: ${colors.textPrimary};
+  color: ${colors.secondary};
   font-family: inherit;
 `;
 
@@ -122,7 +122,7 @@ const InputWrapper = styled.section`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: #f7efe6;
+  background: ${colors.primary};
   gap: 16px;
   
 `;
@@ -131,7 +131,7 @@ const Input = styled.input`
   flex: 1;
   min-width: 0;
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 18px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: inherit;
