@@ -16,3 +16,5 @@ I am using Zustand since its a requiery for this course.
 Full Accessibility will be applied.
 
 For styling I use Styled-components.
+
+Link to Netlify: https://todo-app-ml.netlify.app/
