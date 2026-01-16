@@ -20,12 +20,12 @@ export const TodoItem = ({ todo }) => {
       />
       <Text
         id={textId}
-        completed={todo.completed}
-        hasColor={!!todo.color}>{todo.text}
+        $completed={todo.completed}
+        $hasColor={!!todo.color}>{todo.text}
       </Text>
       <DeleteBtn
         aria-label={`Remove: ${todo.text}`}
-        hasColor={!!todo.color}
+        $hasColor={!!todo.color}
         type="button"
         onClick={() => removeTodo(todo.id)}>
         🗑
@@ -39,7 +39,7 @@ const Item = styled.div`
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: ${(p) => p.color || "transparent"};
+  background: ${colors.primary};
   font-family: inherit; 
   margin: 10px 0;
 `;
@@ -53,10 +53,10 @@ const Checkbox = styled.input`
 
 const Text = styled.span`
   flex: 1;
-  font-size: 16px;       
+  font-size: 18px;       
   font-weight: 400;     
-  color: ${colors.textPrimary};
-  text-decoration: ${(p) => (p.completed ? "line-through" : "none")};
+  color: ${colors.secondary};
+  text-decoration: ${(p) => (p.$completed ? "line-through" : "none")};
   word-break: break-word;
   font-family: inherit;
 `;
@@ -66,11 +66,11 @@ const DeleteBtn = styled.button`
   border: none;
   cursor: pointer;
   font-size: 18px;
-  color: ${colors.textPrimary};
+  color: ${colors.secondary};
   padding: 4px;
 
   &:focus-visible {
-    outline: 2px solid ${colors.header};
+    outline: 2px solid ${colors.primary};
     outline-offset: 2px;
   }
 `;
