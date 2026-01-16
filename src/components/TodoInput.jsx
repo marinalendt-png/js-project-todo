@@ -61,7 +61,11 @@ const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 24px;
+  padding: 16px;
+
+  @media (min-width: 768px) {
+    padding 24px;
+  }
 `;
 
 const HeaderContainer = styled.header`
@@ -70,8 +74,11 @@ const HeaderContainer = styled.header`
   background: ${colors.primary};
   width: 100%;
   align-items: center;
-  margin-left: -24px;
-  width: calc(100% + 48px);
+  padding: 16px 0;
+
+  @media (min-width: 768px) {
+    padding: 20px 0;
+  }
 `;
 
 const Header = styled.h1`
@@ -91,8 +98,12 @@ const Main = styled.main`
 const CountRow = styled.div`
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
   margin-top: 8px;
+
+  @media (min-width: 768px) {
+    gap: 16px;
+  }
 `;
 
 const Count = styled.div`
@@ -113,6 +124,12 @@ const Button = styled.button`
   border-radius: 8px;
   color: ${colors.secondary};
   font-family: inherit;
+
+  @media (min-width: 480px) {
+    width: 60px;
+    height: 36px;
+    font-size: 14px;
+  }
 `;
 
 const InputWrapper = styled.section`
@@ -123,16 +140,25 @@ const InputWrapper = styled.section`
   justify-content: center;
   padding: 20px;
   background: ${colors.primary};
-  gap: 16px;
-  
+  gap: 12px;
+
+  @media (min-width: 768px) {
+    gap: 16px;
+    padding: 20px;
+    }
 `;
 
 const Input = styled.input`
   flex: 1;
   min-width: 0;
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 10px 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-family: inherit;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
 `;
