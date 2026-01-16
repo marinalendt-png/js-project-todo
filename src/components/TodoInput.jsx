@@ -13,7 +13,7 @@ export const TodoInput = () => {
 
   const handleAddTodo = () => {
     const trimmed = todoText.trim();
-    if (!trimmed) return; //Förhindrar tomma todos
+    if (!trimmed) return;
     addTodo(trimmed);
     setTodoText("");
   };
